@@ -1,0 +1,6 @@
+mutation {
+  createUser(userInput : {email : "emma@gmail.com", password : "password", name : "emma"}) { 
+    _id
+    email 
+  }
+}

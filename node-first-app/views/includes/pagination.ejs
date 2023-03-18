@@ -1,0 +1,12 @@
+<section class="pagination">
+    <% if(hasPrevPage) { %>
+        <a href="?page=<%= currentPage-1 %>"><%= currentPage-1 %></a>
+    <% } %>
+        <a class="active" href="?page=<%= currentPage %>"><%= currentPage %></a>
+    <% if(hasNextPage) { %>
+        <a href="?page=<%= currentPage+1 %>"><%= currentPage+1 %></a>
+    <% } %>
+    <% if(hasNextPage && currentPage+1 != totalPages) { %>
+        <a href="?page=<%= totalPages %>">Last</a>
+    <% } %>
+</section>
